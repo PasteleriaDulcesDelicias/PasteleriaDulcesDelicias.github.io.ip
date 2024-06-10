@@ -1,0 +1,141 @@
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+header{
+	font-family:Arial, Helvetica, sans-serif;
+	color: #639;
+	text-align: center;
+	background-image:url(fotos/ola4.png);
+	height: 300px;
+	background-size:cover;
+	
+}	
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:justify;
+	margin:0;
+	padding:0;
+	background-image:url(fotos/img_fondo_past.jpeg);
+}
+
+nav{
+    margin: auto;
+    font-size: 18px;
+	background: linear-gradient(to bottom, #FCF, #FFF );
+	display:flex;
+	flex-direction:row;
+}
+
+.menu{
+	list-style:none;
+	display:flex;
+	justify-content:space-around;
+}
+
+.menu > li >a{
+	display:block;
+	padding:15px 20px;
+	color:#639;
+	text-decoration:none;
+}
+
+.menu > li:hover{
+	background-color:#C9F;
+}
+
+.menu2{
+	position:absolute;
+	display:none;
+	list-style:none;
+	width:auto;
+	background-color: rgba(0,0,0,.5);
+}
+
+.menu li:hover .menu2{
+	display:block;
+}
+
+.menu2 li:hover{
+	background-color:rgb(67, 6, 120);
+}
+
+.menu2 li a{
+	display:block;
+	color:#FC9;
+	
+	padding:20px 30px;
+	text-decoration:none;
+}
+
+
+
+.seccion1{
+    display:flex;
+	flex-wrap:wrap;
+}
+/*color de fondo azul*/
+section{
+    text-align: center;
+    color: #639;
+	flex:50%;
+	padding:30px;
+	margin:20px;
+}
+
+section{
+	padding:30px;
+	flex:50%;
+}
+
+
+footer{
+	text-align:center;
+	background-color:#C9F;
+	padding:10px;
+	color:#639;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambia la dirección del menú a vertical */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espacio entre elementos del menú en vertical */
+    }
+}
+
+.login-container {
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(31, 30, 30, 0.3);
+    text-align: center;
+}
+.login-container h1 {
+    color: #639;
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: 49%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #c00ced;
+}
+.login-container button {
+    padding: 10px 20px;
+    background-color: #7300ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mapita{
+	text-align: center;
+	color: #639;
+}
